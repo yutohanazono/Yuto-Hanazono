@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WebDesign</title>
+<link rel="stylesheet" href="./css/conf.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+
+    <header>WebDesign</header>
+    <nav>
+        <div class="visit">メニュー</div>
+        <ul>
+            <li id="m1"><a href="#">Menu1</a></li>
+            <li id="m3"><a href="page3.html">Menu3</a></li>
+            <li id="m4"><a href="page2.html">Menu4</a></li>
+            <li id="m5"><a href="page1.html">Menu5</a></li>
+        </ul>
+    </nav>
+    <main>
+
+<div id="ims_outer">
+<div id="ims_inner">
+    <div id="ims_but1"><a href="page3.html"><h1>制作物</h1></a></div>
+    <div id="ims_but3"><a href="#05">SNS</a></div>
+    <div id="ims_but7"><a href="#05">Mail</a></div>
+    <div id="ims_but5"><a href="#03">制作物の一部</a></div>
+    <div id="ims_but6"><a href="#04">ライフコンセプト</a></div>
+</div>
+</div>
+
+<a id="04"></a>
+<h2>ライフコンセプト</h2>
+<hr>
+<h3>猪突猛進</h3>
+<p>ひたすら目標に向かって猛烈に突き進む。
+<em>時には立ち止まってじっくり考えたい。</em>
+</p>
+
+<a id="03"></a>
+<h2>制作物の一部</h2>
+<hr>
+<div id="gallery">
+
+    <div class="gallery_box">
+        <a href="images/1logo.jpg" class="zoom"><img src="images/1logo.jpg" alt="ロゴ"></a>
+        <h3>ロゴ</h3>
+        <p>
+            マルチメディア実習で作成。自分の名前のイメージでロゴを作成しました。<a href="page3.html"><img alt="詳細"></a>
+        </p>
+    </div>
+    <div class="gallery_box">
+        <a href="images/BANANA .jpg" class="zoom"><img src="images/BANANA .jpg" alt="バナナ"></a>
+        <h3>バナナ</h3>
+        <p>
+            趣味で作成した作品。バナナの画像にテキストを当てはめる。<a href="page3.html"><img alt="詳細"></a>
+        </p>
+    </div>
+    <div class="gallery_box">
+        <a href="images/1fish.jpg" class="zoom"><img src="images/1fish.jpg" alt="魚"></a>
+        <h3>魚</h3>
+        <p>
+            CG実習で作成。魚が泳いでいるように見えるよう光の差し込みを意識して作成。<a href="page3.html"><img alt="詳細"></a>
+        </p>
+    </div>
+    <div class="gallery_box">
+        <a href="images/1kan.jpg" class="zoom"><img src="images/1kan.jpg" alt="缶と箱"></a>
+        <h3>缶と箱</h3>
+        <p>
+            CG実習で作成。缶と缶の箱ををイメージして作成ラベルの貼り付けを行った。<a href="page3.html"><img alt="詳細"></a>
+        </p>
+    </div>
+    <div class="gallery_box">
+        <a href="images/daisi.jpg" class="zoom"><img src="images/daisi.jpg" alt="乗換NAVITIME"></a>
+        <h3>乗換NAVITIME</h3>
+        <p>
+            UIの実習で作成。乗換NAVITIMEの画面を模して作成しました。<a href="page3.html"><img alt="詳細"></a>
+        </p>
+    </div>
+    <a href="page3.html">もっと見る</a>
+</div>
+
+<a id="02"></a>
+<h2>News</h2>
+<hr>
+<table border="5">
+<tr>
+    <td>1</td>
+    <td>2020-04</td>
+    <td>豊川工科高校　入学</a></td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>2023-03</td>
+    <td>豊川工科高校　卒業</a></td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>2023-04</td>
+    <td>愛知工業大学　入学</a></td>
+</tr>
+</table>
+
+<div id="gallery1">
+    <div class="gallery_box1">
+        <a href="https://twitter.com/AITgeco?ref_src=twsrc%5Etfw"><img src="images/sns-100.jpg" alt="写真" /></a>
+    </div>
+
+</div>
+
+<a id="05"></a>
+<h3>お問い合わせ先『x23069@aitech.ac.jp』</h3>
+
+</main>
+<footer>Copyright(C) AIT.All rights reserved.</footer>
+</div>
+
+<script src="./js/swiper.js"></script>
+<link href="./css/swiper.css" rel="stylesheet">
+<script>
+    new Swiper(".swiper-container",{
+        loop: true,
+        autoplay:{delay:5000},
+        effect:'fade',
+        navigation:{
+            nextEl:'.swiper-button-next',
+            prevEl:'.swiper-button-prev'
+        }
+    });
+</script>
+
+<script src="./js/luminous.js"></script>
+<link href="./css/luminous.css" rel="stylesheet">
+<script>
+    new LuminousGallery(
+        document.querySelectorAll('.zoom'),
+        {arrowNavgation:true},
+        {caption: function(alt){
+            return alt.querySelector('img').getAttribute('alt');
+        }}
+    );
+</script>
+</body>
+</html>
